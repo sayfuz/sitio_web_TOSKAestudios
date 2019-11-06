@@ -47,7 +47,7 @@ border: 0px;
     display: inline-block;
 }
 
-#inicio{
+#quienes_somos{
     display: inline-block;
     width: 200px;
     height: 50px;
@@ -80,24 +80,4 @@ border: 0px;
     font-size: 1.5em;
     font-family: SLANT;
     text-decoration-line: none;
-}
-
-/* Más reciente */
-
-.video-mas-reciente{
-    width: 70%;
-    height: 600px;
-    max-width: 1300px;
-}
-
-#video-jirasol{
-    width: 100%;
-    height: 600px;
-}
-
-h2{
-    font-family: SLANT;
-    font-size: 40px;
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
