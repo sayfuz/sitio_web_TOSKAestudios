@@ -4,10 +4,31 @@
     margin: 0px;
     }
 
+
 @font-face {
     font-family: SLANT;
     src: url(../fonts/SLANT.ttf);
 }
+
+@font-face {
+    font-family: brandon_thin;
+    src: url(../fonts/Brandon_thin.otf);
+    }
+
+ @font-face {
+    font-family: brandon_med;
+    src: url(../fonts/Brandon_med.otf);
+    }   
+
+@font-face {
+    font-family: brandon_reg;
+    src: url(../fonts/Brandon_reg.otf);
+    }
+        
+@font-face {
+    font-family: brandon_bld;
+    src: url(../fonts/Brandon_bld.otf);
+    }
 
 body{
 background-color: #474747;
@@ -22,7 +43,9 @@ border: 0px;
 }
 
 .logo-img{
-    width: 100px;
+    width: 200px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .logo{
@@ -34,52 +57,91 @@ border: 0px;
     padding-top: 15px;
 }
 
-.barra{
-    
+nav{
     display: flex;
-    justify-content: center;
-    background-color: black;
-    position: relative;
 }
 
-.barra-lista{
-    margin-bottom: 0px;
-    display: inline-block;
+
+
+#btn-menu{
+    display: none;
+}
+
+header label{
+    display: none;
+    padding: 10px;
+    width: 28px;
+}
+
+header label:hover{
+    cursor: pointer;
+    background: rgba(150,150,150,0.4);
+}
+
+
+
+.barra ul{
+    margin: 0 auto;
+    display: flex;
+    list-style: none;
+    padding: 0;  
+    text-align: center;  
 }
 
 #inicio{
-    display: inline-block;
-    width: 200px;
-    height: 50px;
-    background-color: #474747; 
+    background: #474747;
 }
 
-.navegacion{
-    display: inline-block;
-    width: 200px;
-    height: 50px;
-    background-color: white;
-    margin: 5px;
-    margin-bottom: 0px;
-    align-items: center;
-    flex-shrink: 1;
-}
-
-.navegacion:hover{
-    display: inline-block;
-    width: 200px;
-    height: 50px;
-    background-color: #474747;
-
-}
-.link-barra{
-    color: black;
+.barra li a{
     display: block;
-    text-align: center;
-    padding-top: 10px;
-    font-size: 1.5em;
+    background-color: white;
+    margin-left: 5px;
+    margin-bottom: 0px;  
+    box-sizing: border-box;
     font-family: SLANT;
     text-decoration-line: none;
+    color: #000000;
+    width: 200px;
+    height: 50px;
+    align-items: center;
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 10px;
+
+}
+
+.barra li a:hover{
+    background: #474747;
+}
+
+@media (max-width:800px) {
+    header label{
+        display: block;
+    }
+
+    .barra{
+        position: absolute;
+        background-color: black;
+        width: 200px;
+        margin-left: 0px;
+        margin-bottom: 5px;
+        margin-left: -200px;
+        transition: all 0.5s;
+    }
+
+    .barra ul{
+        flex-direction: column;
+    }
+
+    .barra li a{
+        margin-left: 0px;
+        margin-bottom: 5px;
+    }
+
+    #btn-menu:checked ~ .barra {
+        margin: 0;
+    }
+
 }
 
 /* Más reciente */
@@ -88,6 +150,7 @@ border: 0px;
     width: 70%;
     height: 600px;
     max-width: 1300px;
+    padding: 10px;
 }
 
 #video-jirasol{
@@ -96,8 +159,35 @@ border: 0px;
 }
 
 h2{
-    font-family: SLANT;
+    font-family: Brandon_bld;
     font-size: 40px;
     margin-top: 20px;
     margin-bottom: 20px;
+    margin-left: 15px;
+    color: white;
 }
+
+h3{
+    font-family: Brandon_bld;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white; 
+}
+
+.titulo-mas-reciente p{
+    font-family: Brandon_med;
+    font-size: 25px;
+    padding: none;
+    margin: none;
+}
+.titulo-mas-reciente{
+    margin-left: 20px;
+    margin-right: 20px;
+    position: absolute;
+    left: 70%;
+    top: 29%;
+}
+
+/* pie de página */
+
