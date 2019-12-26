@@ -31,7 +31,7 @@
     }
 
 body{
-background-color: #474747;
+background-color: #474747 !important;
 border: 0px;
 }
 
@@ -90,6 +90,7 @@ header label:hover{
 
 #inicio{
     background: #474747;
+    color: #ffffff;
 }
 
 .barra li a{
@@ -112,6 +113,7 @@ header label:hover{
 
 .barra li a:hover{
     background: #474747;
+    color: #ffffff;
 }
 
 @media (max-width:800px) {
@@ -120,46 +122,91 @@ header label:hover{
     }
 
     .barra{
-        position: absolute;
         background-color: black;
-        width: 200px;
+        width: 100%;
         margin-left: 0px;
         margin-bottom: 5px;
-        margin-left: -200px;
+        display: none;
         transition: all 0.5s;
     }
 
     .barra ul{
         flex-direction: column;
+        width: 100%;
     }
 
     .barra li a{
         margin-left: 0px;
         margin-bottom: 5px;
+        width: 100%;
     }
 
+
     #btn-menu:checked ~ .barra {
-        margin: 0;
+        display: block;
     }
 
 }
 
 /* Más reciente */
 
+@media (max-width:800px){
+
+    .video{
+        width: 100% !important;
+    }
+    .descripcion{
+        width: 100% !important;
+
+    }
+
+    .mas-reciente-seccion{
+        flex-wrap: wrap;
+    }
+    .video-mas-reciente{
+        height: auto !important;
+    }
+
+}
+
+.container{
+    width: 80%;
+    padding: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin: 0px auto;
+}
+
 .cuerpo{
     margin: 0% 10%;
     box-sizing: border-box;
 }
 
-.prueba{
- 
+.mas-reciente-seccion{
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.video{
+    width: 60%;
+    display: flex;
+    margin: 15px 0px;
 }
 
 .video-mas-reciente{
-    width: 70%;
-    height: 600px;
+    width: 100%;
+    height: 500px;
     max-width: 1300px;
     padding: 10px;
+}
+
+.descripcion{
+    width: 40%;
+    padding: 10px;
+    margin: 15px 0px;
+    display: block;
+    flex-wrap: wrap;
 }
 
 #video-jirasol{
@@ -180,10 +227,8 @@ h2{
 h3{
     font-family: Brandon_bld;
     font-size: 30px;
-    margin-top: 20px;
     margin-bottom: 20px;
-    color: white; 
-    margin-top: 20px;
+    color: white;
 }
 
 .titulo-mas-reciente{
@@ -194,15 +239,72 @@ h3{
     top: 29%;
 }
 
-.titulo-mas-reciente p{
-    font-family: Brandon_med;
-    font-size: 25px;
+.informacion{
+    font-family: Brandon_thin;
+    font-size: 20px;
     padding: none;
     margin: none;
     max-height: 600px;
-
+    color: #ffffff;
+    font-weight: 600;
 }
 
 
 /* pie de página */
 
+@media (max-width:800px){
+
+    .container-info{
+        display: block !important;
+    }
+
+    .redes-pie{
+        width: auto !important;
+    }
+
+    .contacto-pie{
+        width: auto !important;
+
+    }
+}
+
+.pie-cuerpo{
+    background-color: #000000;
+}
+
+.container-foot{
+    width: 80%;
+    padding: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin: 0px auto;
+    position: relative;
+}
+
+.container-info{
+    width: 100%;
+    display: flex;
+}
+
+.redes-img{
+    width: 40px;
+    margin: 5px;
+}
+
+.contacto-pie{
+    width: 50%;
+    text-align: center;
+    margin: 15px;
+}
+
+.redes-pie{
+    width: 50%;
+    text-align: center;
+    margin: 15px;
+}
+
+.derechos-pie{
+    width: 100%;
+    text-align: center;
+    margin: 15px;
+}
