@@ -115,7 +115,7 @@ header label:hover{
     color: #ffffff;
 }
 
-@media (max-width:800px) {
+@media (max-width:860px) {
     header label{
         display: block;
     }
@@ -157,10 +157,122 @@ header label:hover{
     font-weight: 600;
 }
 
+/* Más reciente */
+
+@media (max-width:860px){
+
+    .contenedorsm{
+        width: 100%;
+        display: block !important;
+    }
+
+    .mateo{
+        width: 100% !important;
+        margin: 0px !important;
+    }
+
+    .set{
+        width: 100% !important;
+        margin: 0px !important;
+        margin-top: 15px !important;
+    }
+}
+
+.contenedorqs{
+    width: 80%;
+    padding: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+
+.contenedorsm{
+    width: 100%;
+    display: flex;
+}
+
+.imgteam{
+    width: 100%;
+    height: auto;
+    filter: grayscale(100%);
+    transition: filter 1s ease; 
+}
+
+.imgteam:hover{
+    filter: grayscale(0%);
+}
+.mateo{
+    width: 50%;
+    margin: 15px;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.mateoimg{
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 15px;
+    margin: 0px auto;
+}
+
+.mateoinfo{
+    width: 100%;
+    
+}
+.set{
+    width: 50%;
+
+    margin: 15px;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.setimg{
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 15px;
+    margin: 0px auto;
+}
+
+.setinfo{
+    
+}
+
+h2{
+    font-family: Brandon_bld;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    color: white;
+}
+
+h3{
+   font-family: Brandon_bld;
+    font-size: 30px;
+    
+    color: white;
+}
+
+.informacion{
+    font-family: Brandon_thin;
+    font-size: 20px;
+    padding: none;
+    margin: none;
+    max-height: 600px;
+    color: #ffffff;
+    font-weight: 600;
+}
 
 /* pie de página */
 
-@media (max-width:800px){
+@media (max-width:860px){
 
     .container-info{
         display: block !important;

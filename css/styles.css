@@ -116,7 +116,7 @@ header label:hover{
     color: #ffffff;
 }
 
-@media (max-width:800px) {
+@media (max-width:860px) {
     header label{
         display: block;
     }
@@ -150,7 +150,7 @@ header label:hover{
 
 /* Más reciente */
 
-@media (max-width:800px){
+@media (max-width:860px){
 
     .video{
         width: 100% !important;
@@ -177,10 +177,6 @@ header label:hover{
     margin: 0px auto;
 }
 
-.cuerpo{
-    margin: 0% 10%;
-    box-sizing: border-box;
-}
 
 .mas-reciente-seccion{
     width: 100%;
@@ -252,7 +248,7 @@ h3{
 
 /* pie de página */
 
-@media (max-width:800px){
+@media (max-width:860px){
 
     .container-info{
         display: block !important;

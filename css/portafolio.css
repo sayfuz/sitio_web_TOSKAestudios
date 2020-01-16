@@ -115,7 +115,7 @@ header label:hover{
     color: #ffffff;
 }
 
-@media (max-width:800px) {
+@media (max-width:860px) {
     header label{
         display: block;
     }
@@ -160,7 +160,7 @@ header label:hover{
 
 /* pie de página */
 
-@media (max-width:800px){
+@media (max-width:860px){
 
     .container-info{
         display: block !important;

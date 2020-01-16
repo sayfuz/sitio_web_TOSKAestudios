@@ -115,7 +115,7 @@ header label:hover{
     color: #ffffff;
 }
 
-@media (max-width:800px) {
+@media (max-width:860px) {
     header label{
         display: block;
     }
@@ -204,7 +204,7 @@ textarea{
 
 @media (max-width:600px) {
     form{
-        width: 100%;
+        width: 90%;
     }
 }
 
@@ -221,7 +221,7 @@ textarea{
 
 /* pie de página */
 
-@media (max-width:800px){
+@media (max-width:860px){
 
     .container-info{
         display: block !important;
