@@ -98,16 +98,15 @@ header label:hover{
     margin-left: 5px;
     margin-bottom: 0px;  
     box-sizing: border-box;
-    font-family: SLANT;
+    font-family: brandon_bld;
     text-decoration-line: none;
     color: #000000;
     width: 200px;
     height: 50px;
     align-items: center;
-    font-size: 1.5em;
+    font-size: 1.6em;
     text-align: center;
-    padding-top: 10px;
-
+    padding-top: 6px;
 }
 
 .barra li a:hover{
@@ -157,6 +156,73 @@ header label:hover{
     font-weight: 600;
 }
 
+/* cuerpo */
+
+@media (max-width:1012px){
+    .video{
+       display: inline !important;
+       padding: 0px !important;
+    }
+}
+
+.contenedor{
+    width: 80%;
+    padding: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.videos1{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.videos2{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.video{
+    width: 33%;
+    text-align: center;
+    align-items: center;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.video-inframe{
+    width: 100%;
+    height: 20em;
+}
+
+h2{
+    font-family: Brandon_bld;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    color: white;
+}
+
+h3{
+   font-family: Brandon_bld;
+    font-size: 30px;
+    
+    color: white;
+}
+
+.informacion{
+    font-family: Brandon_thin;
+    font-size: 20px;
+    padding: none;
+    margin: none;
+    max-height: 600px;
+    color: #ffffff;
+    font-weight: 600;
+}
 
 /* pie de página */
 
